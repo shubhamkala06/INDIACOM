@@ -1,0 +1,1 @@
+export const BVICAM = "https://bvicam.ac.in/indiacom/"

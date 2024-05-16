@@ -1,0 +1,34 @@
+export const SNPLinks = [
+    {
+        href:"https://ieeedelhisac.in/",
+        imgLink:"images/IEEE-DS-Logo.png"
+    },
+    {
+        href:"http://www.iete.org/",
+        imgLink:"images/IETE-Logo.png"
+    },
+    {
+        href:"https://safasociety.org/iitp/",
+        imgLink:"images/IITP-Logo.jpg"
+    },
+    {
+        href:"https://www.safasociety.org/imp/",
+        imgLink:"images/IMP-Logo.jpg"
+    },
+    {
+        href:"http://www.csi-india.org/",
+        imgLink:"images/CSI-Logo.png"
+    },
+    {
+        href:"http://www.isteonline.in/",
+        imgLink:"images/ISTE-Logo.png"
+    },
+    {
+        href:"http://www.isteonline.in/",
+        imgLink:"images/ISTE-Logo.png"
+    },
+    {
+        href:"http://ipu.ac.in",
+        imgLink:"images/GGSIU-Logo.png"
+    }
+];

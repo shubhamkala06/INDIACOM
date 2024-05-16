@@ -1,0 +1,528 @@
+:root{
+    --fntClr: #e31e24;
+    --lnkClr: rgba(0, 0, 168, 0.747);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.root{
+    margin: 0.5% 6%;
+}
+
+a:hover{
+    color: var(--lnkClr) !important;
+}
+
+/* -------------------Keyframes------------------- */
+@keyframes scrolling-type {
+    0% {
+        transform: translate(20%, 0%);
+    }
+    50%{
+        transform: translate(1%, 0%);
+    }
+    100% {
+        transform: translate(20%, 0%);
+    }
+}
+
+
+/* -------------------Header------------------- */
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* --------Login Link-------- */
+.loginLink{
+    padding-right:20px ;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.loginLink a{
+    color: black;
+}
+
+/* --------Page Header-------- */
+.pageHeader{
+    display: grid;
+    grid-template-columns: 24% 50% 24%;
+    gap: 2%;
+    background-image: url("https://bvicam.ac.in/indiacom/images/barINDIA.jpg");
+    background-size: contain;
+    font-size: 15px;
+    padding: 0.6% 2%;
+    color: white;
+    grid-template-areas: "P1 P2 P3";
+}
+.pageHeaderP1,.pageHeaderP3{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 100;
+    letter-spacing: -0.4px;
+}
+.pageHeaderP1{
+    grid-area: P1;
+}
+.pageHeaderP3{
+    grid-area: P3;
+}
+.pageHeaderP2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: P2;
+}
+.pageHeaderP2>.pageHeadingInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.infoP3{
+    color: #eef31a;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+}
+.bvicamLogo, .techSponserLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bvicamLogo img{
+    width: 80%;
+    height: 85%;
+}
+.techSponserLogo img{
+    width: 80%;
+    height: 85%;
+}
+
+/* ---Supporters N Promoters--- */
+.supportesContainer{
+    padding: 0% 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.supportesContainer>p{
+    text-align: center;
+    font-size: 11.2px;
+    color: var(--fntClr);
+}
+.supportesContainer>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* --------Marquee Text-------- */
+.marqueeRow {
+    /* background-image: url("https://bvicam.ac.in/indiacom/images/marquee.jpg");
+    background-size: cover; */
+    background-color: #d0e6fb;
+    color: var(--fntClr);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+}
+  
+.marqueeRow p {
+    position: absolute;
+    min-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+}
+  
+.marqueeRow p span, 
+.marqueeRow p:after {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    white-space: nowrap;
+    top:1px;
+}
+
+.marqueeRow p {
+    animation: scrolling-type 10s infinite linear;
+}
+
+
+/* -------------------Body------------------- */
+.bodyContainer{
+    margin: 1% 0%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "nav .";
+}
+
+/* ----------Navigation Tab---------- */
+.navTab{
+    margin-right: 20px;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    letter-spacing: -0.2px;
+    font-weight: 550;
+}
+.navTab div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 35px;
+    text-align: left;
+    padding: 2% 4%;
+}
+.navTab div:hover{
+    background-color: var(--fntClr);
+}
+.navTab>a{
+    text-decoration: none;
+    color: black;
+}
+
+/* --------------Home-------------- */
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------Home Part1------- */
+.homeP1{
+    display: flex;
+    gap: 20px;
+    height: 340px;
+}
+
+/* --------Carousel-------- */
+.embla__slide>img{
+    width: 45vw;
+    height: 300px;
+}
+.carouselContainer{
+    padding: 2% 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* --------News Section-------- */
+.newsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsScroll{
+    overflow: scroll;
+    padding: 5% 3% 2% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.newsContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 200;
+}
+.newsContainer>p>span{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.199);
+    margin: 1px 0px;
+}
+.newsSection a{
+    text-decoration: none;
+    color: black;
+}
+.newsRoom{
+    font-size: 11px;
+    letter-spacing: -0.2px;
+    align-self: flex-end;
+}
+
+/* -------Home Part2------- */
+.homeP2{
+    margin-top: 4%;
+    padding: 0px 1%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+/* ---INDIACOM INTRO--- */
+.indiacomIntro{
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    padding-bottom: 1%;
+}
+.indiacomIntro>p{
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+}
+.keyword{
+    font-weight: 510;
+}
+/* ---Track Info--- */
+.trackInfo{
+    display: flex;
+    gap: 5%;
+    font-weight: 510;
+    letter-spacing: 0.3px;
+    width: 100%;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    padding-bottom: 1%;
+}
+.trackID, .trackName{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.track1{
+    color: green;
+}
+.track2{
+    color: black;
+}
+.track3{
+    color: var(--lnkClr);
+}
+.track4{
+    color: var(--fntClr);
+}
+.track5{
+    color: black;
+}
+
+/* ---Important Dates--- */
+.importantDates{
+    margin: 3% 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    padding-bottom: 1%;
+}
+.importantDates>p{
+    align-self: center;
+    font-weight: 600;
+}
+.datesTable{
+    display: flex;
+    justify-content: space-around;
+}
+.events, .dates{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.events>p:first-child, .dates>p:first-child{
+    font-weight: 510;
+    text-align: center;
+}
+.events>p{
+    line-height: 20px;
+}
+/* ---Note--- */
+.note{
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+}
+/* -------------------Footer------------------- */
+.footerContainer{
+    border-top: 1px solid black;
+    padding: 0.5% 0%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+}
+.footerContainer>a{
+    color: black;
+    display: block;
+}
+.footerContainer>a:last-child{
+    margin-left: auto;
+}
+
+/* -------------------Embla Carousel------------------- */
+.embla {
+    overflow: hidden;
+    width: 45vw;
+    height: 300px;
+}
+.embla__container {
+    display: flex;
+}
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+}
+
+/* -------------------Login Form------------------- */
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    gap: 2%;
+}
+.loginContainer>h1{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5% 8%;
+}
+.loginField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+.loginForm input{
+    width: 80%;
+    height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.loginForm>button{
+    font-size: 15px;
+    height: 24px;
+    width: 50%;
+    background-color: var(--lnkClr);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.loginForm>button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+}
+.otherOptions{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.otherOptions>p>a{
+    text-decoration: none;
+    color: black;
+}
+/* -------------------SignUp Form------------------- */
+.signUpContainer{
+    /* border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black; */
+    padding: 5% 2%;
+}
+.signUpContainer>p,.disclaimer1,.disclaimer2{
+    font-size: 13px;
+}
+.signUpContainer a{
+    color: black;
+}
+.signUpContainer span{
+    color: red;
+    font-size: 12px;
+}
+.disclaimer1,.disclaimer2{
+    margin-top: 2%;
+    color: rgba(0, 0, 0, 0.527);
+}
+.signUpContainer>h1{
+    text-align: center;
+    font-size: 27px;
+    margin: 2% 0%;
+}
+.signUpForm{
+    width: 80%;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    padding: 2% 0px;
+    margin: 0% auto;
+}
+.signUpForm input,.signUpForm select{
+    height: 60%;
+    margin-left: 100px;
+    padding: 0% 1%;
+    letter-spacing: 0.4px;
+    font-size: 15px;
+    width: 100%;
+}
+.signUpForm select{
+    text-align: center;
+}
+.signUpField{
+    width: 70%;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+.signUpField>label{
+    width: 50%;
+    position: relative;
+    line-height: 25px;
+}
+.signUpForm .required>label::before{
+    content: "*";
+    color: red;
+    position: absolute;
+    left: -8px;
+    top: -4px;
+    font-size: 13px;
+}
+.signUpField>span{
+    top: -0.8px;
+    left: -6px;
+}
+.btns{
+    margin-top: 1%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%
+}
+.btns>button{
+    height: 80%;
+    width: 100px;
+}

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { EmblaCarousel } from "./Carousel";
 import News from "./News";
 import { news } from "./DataNews";
+import TrackInfo from "./TrackInfo";
 
 const Home = ()=>{
     return (
@@ -40,22 +41,7 @@ const Home = ()=>{
                         <span className="keyword">INDIACom-2025</span> will be held at Bharati Vidyapeeth, New Delhi (INDIA). The conference will provide a platform for technical exchanges within the research community and will encompass regular paper presentation sessions, invited talks, key note addresses, panel discussions and poster exhibitions. In addition, the participants will be treated to a series of cultural activities, receptions and networking to establish new connections and foster everlasting friendship among fellow counterparts. The conference will also provide opportunity to the participants to visit some of the world’s famous tourist places in Delhi like Qutub Minar, Red Fort, Akshardham Temple, Lotus Temple, Jantar Mantar and Taj Mahal at Agra (around 200 KM from Delhi).   
                     </p>
                 </div>
-                <div className="trackInfo">
-                    <div className="trackID">
-                        <p className="track1">Track #1</p>
-                        <p className="track2">Track #2</p>
-                        <p className="track3">Track #3</p>
-                        <p className="track4">Track #4</p>
-                        <p className="track5">Track #5</p>
-                    </div>
-                    <div className="trackName">
-                        <p className="track1">Sustainable Computing</p>
-                        <p className="track2">High Performance Computing</p>
-                        <p className="track3">High Speed Networking and Information Security</p>
-                        <p className="track4">Software Engineering and Emerging Technologies</p>
-                        <p className="track5">Intl. Conference on Information Engg. and Mgmt.</p>
-                    </div>
-                </div>
+                <TrackInfo/>
                 <div className="importantDates">
                     <p>Important Dates</p>
                     <div className="datesTable">

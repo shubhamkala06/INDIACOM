@@ -1,5 +1,5 @@
 import React from "react";
-import data from "./DataCallForPaper";
+import data from "../Resources/data/DataCallForPaper";
 import TrackInfo from "./TrackInfo";
 
 function CallForPaper() {

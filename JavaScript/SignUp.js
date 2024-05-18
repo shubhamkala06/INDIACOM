@@ -1,5 +1,5 @@
 import { Link,useNavigate } from "react-router-dom";
-import { salutationOptions,countryList,eventList,organisationList,categoryList } from "./DataSignUpOptions";
+import { salutationOptions,countryList,eventList,organisationList,categoryList } from "../Resources/data/DataSignUpOptions";
 import { useState } from "react";
 
 const SignUp = ()=>{

@@ -1,4 +1,4 @@
-import { BVICAM } from "./DataConstants";
+import { BVICAM } from "../Resources/data/DataConstants";
 const SupportersNPromoters = (p)=>{
     return (
         <a href={p.href} target="blank">

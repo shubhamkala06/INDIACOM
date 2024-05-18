@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
-import { BVICAM } from './DataConstants'
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+import { BVICAM } from "../Resources/data/DataConstants";
 
 export function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])

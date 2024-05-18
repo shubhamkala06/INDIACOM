@@ -1,4 +1,4 @@
-import { tracks } from "./DataTrackContact";
+import { tracks } from "../Resources/data/DataTrackContact";
 const Contact = () => {
   return (
     <div>

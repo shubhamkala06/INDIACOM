@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { EmblaCarousel } from "./Carousel";
 import News from "./News";
-import { news } from "./DataNews";
+import { news } from "../Resources/data/DataNews";
 import TrackInfo from "./TrackInfo";
 import ImportantDatesComponent from "./ImportantDatesComponent";
 

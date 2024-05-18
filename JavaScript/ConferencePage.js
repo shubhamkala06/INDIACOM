@@ -1,4 +1,4 @@
-import { tracks } from "./Datatracks";
+import { tracks } from "../Resources/data/Datatracks";
 
 const Conference = () => {
   return (

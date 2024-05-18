@@ -1,5 +1,5 @@
-import { BVICAM } from "./DataConstants"
-import { SNPLinks } from "./DataLinks";
+import { BVICAM } from "../Resources/data/DataConstants";
+import { SNPLinks } from "../Resources/data/DataLinks";
 import CurrentUserName from "./CurrentUser";
 import Marquee from "./Marquee";
 import SupportersNPromoters from "./SupportersNPromoters";

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { news } from "./DataNews";
+import { news } from "../Resources/data/DataNews";
 
 const NewsPage = ()=>{
     return (

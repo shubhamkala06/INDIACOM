@@ -11,6 +11,17 @@ import SignUp from "./SignUp";
 import CallForPaper from "./CallForPaper";
 import MemberHome from "./MemberHome";
 import NewsPage from "./NewsPage";
+import ImportantDatesComponent from "./ImportantDatesComponent";
+import PaymentMode from "./PaymentMode";
+import Review from "./ReviewPage";
+import Committees from "./Committee";
+import Guidelines from "./Guidelines";
+import SubmitPaper from "./SubmitPaper";
+import SpecialSession from "./SpecialSessions";
+import JoinTechnical from "./JoinTPC";
+import Plagiarism from "./PlagiarismRules";
+import Conference from "./ConferencePage";
+import Contact from "./ContactUsPage";
 
 const App = ()=>{
     return(
@@ -41,9 +52,8 @@ const appRouter = createBrowserRouter([
                     },
                     {
                         path:"/login",
-                        element:<>
+                        element:
                             <Login/>
-                        </>
                     },
                     {
                         path:"/member/:memberid",
@@ -56,7 +66,51 @@ const appRouter = createBrowserRouter([
                     {
                         path:"/newsPage",
                         element: <NewsPage/>
-                    }
+                    },
+                    {
+                        path:"/importantDates",
+                        element: <ImportantDatesComponent/>
+                    },
+                    {
+                        path:"/paymentModes",
+                        element: <PaymentMode/>
+                    },
+                    {
+                        path:"/reviewNindexing",
+                        element: <Review/>    
+                    },
+                    {
+                        path:"/committees",
+                        element: <Committees/>
+                    },
+                    {
+                        path:"/guidelines",
+                        element: <Guidelines/>
+                    },
+                    {
+                        path:"/submitPaper",
+                        element: <SubmitPaper/>
+                    },
+                    {
+                        path:"/specialSessions",
+                        element: <SpecialSession/>
+                    },
+                    {
+                        path:"/joinTPC",
+                        element: <JoinTechnical/>
+                    },
+                    {
+                        path:"/plagiarism",
+                        element: <Plagiarism/>
+                    },
+                    {
+                        path:"/conference",
+                        element: <Conference/>
+                    },
+                    {
+                        path:"/contact",
+                        element:<Contact/>
+                    },
                 ]
             },
             {

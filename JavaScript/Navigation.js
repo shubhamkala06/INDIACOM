@@ -4,17 +4,17 @@ const Navigation = ()=>{
     return (
         <>
             <nav className="navTab">
-                <Link>
+                <Link to="/newsPage">
                     <div className="navItem">
                         News
                     </div>
                 </Link>
-                <Link>
+                <Link to="importantDates">
                     <div className="navItem">
                        Important Dates
                     </div>
                 </Link>
-                <Link>
+                <Link to="callforpapers">
                     <div className="navItem">
                         Call for Paper
                     </div>
@@ -24,12 +24,12 @@ const Navigation = ()=>{
                         ICIEM-2025
                     </div>
                 </Link>
-                <Link>
+                <Link to="/submitPaper">
                     <div className="navItem">
                         Submit Paper
                     </div>
                 </Link>
-                <Link>
+                <Link to="/specialSessions">
                     <div className="navItem">
                         Special Sessions
                     </div>
@@ -39,17 +39,17 @@ const Navigation = ()=>{
                         Registeration
                     </div>
                 </Link>
-                <Link>
+                <Link to="paymentModes">
                     <div className="navItem">
-                        Payment Methods
+                        Payment Modes
                     </div>
                 </Link>
-                <Link>
+                <Link to="/conference">
                     <div className="navItem">
                         Conference Secretariat
                     </div>
                 </Link>
-                <Link>
+                <Link to="/reviewNindexing">
                     <div className="navItem">
                         Review Process, Publication & Indexing
                     </div>
@@ -69,22 +69,22 @@ const Navigation = ()=>{
                         Invited Speakers
                     </div>
                 </Link>
-                <Link>
+                <Link to='/guidelines'>
                     <div className="navItem">
                         Guidelines to Submit Paper
                     </div>
                 </Link>
-                <Link>
+                <Link to="/joinTPC">
                     <div className="navItem">
                         Join Technical Programme Committee
                     </div>
                 </Link>
-                <Link>
+                <Link to="/plagiarism">
                     <div className="navItem">
                         Plagiarism Policy
                     </div>
                 </Link>
-                <Link>
+                <Link to="committees">
                     <div className="navItem">
                         Committees
                     </div>

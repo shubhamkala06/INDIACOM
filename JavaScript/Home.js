@@ -3,6 +3,7 @@ import { EmblaCarousel } from "./Carousel";
 import News from "./News";
 import { news } from "./DataNews";
 import TrackInfo from "./TrackInfo";
+import ImportantDatesComponent from "./ImportantDatesComponent";
 
 const Home = ()=>{
     return (
@@ -42,27 +43,7 @@ const Home = ()=>{
                     </p>
                 </div>
                 <TrackInfo/>
-                <div className="importantDates">
-                    <p>Important Dates</p>
-                    <div className="datesTable">
-                        <div className="events">
-                            <p>Event</p>
-                            <p>Submission of Full Length Paper</p>
-                            <p>Paper Acceptance Notification</p>
-                            <p>Submission of Final Version of Paper</p>
-                            <p>Registeration</p>
-                            <p>PPT Submission</p>
-                        </div>
-                        <div className="dates">
-                            <p>Date</p>
-                            <p>10<sup>th</sup> December 2024</p>
-                            <p>10<sup>th</sup> February 2025</p>
-                            <p>24<sup>th</sup> February 2025</p>
-                            <p>24<sup>th</sup> February 2025</p>
-                            <p>24<sup>th</sup> February 2025</p>
-                        </div>
-                    </div>
-                </div>
+                <ImportantDatesComponent/>
                 <div className="note">
                     Papers submitted for the Conference, upon peer review, when accepted, need to be presented for further submission to IEEE CPP for consideration to include in the IEEE Xplore Digital Library, subject to their final decision based on quality of the peer review and technical program development for the Conference by the Technical Program Integrity Committee (TPIC) of IEEE.
                 </div>

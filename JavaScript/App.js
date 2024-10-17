@@ -23,13 +23,15 @@ import Plagiarism from "./PlagiarismRules";
 import Conference from "./ConferencePage";
 import Contact from "./ContactUsPage";
 
+import ContextProvider from "../Resources/Contexts/ContextProvider";
+
 const App = ()=>{
     return(
-        <>
+        <ContextProvider>
             <Header />
             <Outlet />
             <Footer/>
-        </>
+        </ContextProvider>
     )
 }
 

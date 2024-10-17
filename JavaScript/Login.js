@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import GlobalContext from "../Resources/Contexts/GlobalContext";
 const Login = ()=> {
   const [formData, setFormData] = useState({user:"",memberID: "",pass: ""});
   const navigate = useNavigate();
+  const {loggedUsername,setUsername} = useContext(GlobalContext);
 
   const handleChange = (event) => {
     let { name,value,type } = event.target;
@@ -15,11 +16,11 @@ const Login = ()=> {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    sessionStorage.setItem('currentUser',formData.user);
-    window.location.href = window.location.href.slice(0,-6)+`/member/${formData.memberID}`;
+    setUsername(formData.user);
+    navigate(`/member/${formData.memberID}`,{replace:true});
   };
 
-  if(sessionStorage.getItem("currentUser")==null){
+  if(loggedUsername==''){
     return (
       <div className="loginContainer">
           <h1>Member Login</h1>

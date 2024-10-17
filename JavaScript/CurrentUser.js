@@ -1,42 +1,30 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useState,useEffect } from "react";
+import { useState,useEffect, useContext } from "react";
+import GlobalContext from "../Resources/Contexts/GlobalContext";
 
 const CurrentUserName = ()=>{
-
-    const [data, setData] = useState(sessionStorage.getItem('currentUser') || '');
+    const {loggedUsername,setUsername} = useContext(GlobalContext);
     const navigate = useNavigate();
-    const deleteData = ()=>{
-        setData('');
-        sessionStorage.removeItem("currentUser");
+    
+    const deleteuserInfo = ()=>{
+        setUsername('');
         navigate(`/`,{replace:true});
     }
-    useEffect(() => {
-        const updateData = () => {
-            setData(sessionStorage.getItem('currentUser') || '');
-        };
-
-        window.addEventListener('storage', updateData);
-        return () => {
-            window.removeEventListener('storage', updateData);
-        };
-    },[]);
-    if(data===''){
-        return(
+    
+    return loggedUsername===''?(
             <div className="loginLink">
                 <div className="wlcm">Welcome, Guest</div>
                 <Link to="/login">[log in]</Link>
             </div>
-        );
-    }
-    else{
-        return(
+        )
+        :
+        (
             <div className="loginLink">
-                <div className="wlcm">Welcome, {data}</div>
-                <Link onClick={deleteData}>[log_out]</Link>
+                <div className="wlcm">Welcome, {loggedUsername}</div>
+                <Link onClick={deleteuserInfo}>[log_out]</Link>
                 <Link>[edit_profile]</Link>
             </div>
         );
-    };
 };
 
 export default CurrentUserName;
